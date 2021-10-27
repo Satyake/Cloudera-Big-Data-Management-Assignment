@@ -1,0 +1,684 @@
+7 minutes ago 	
+		
+describe tbm_sbm_la 
+9 minutes ago 	
+		
+select tbm, count(*) from tbm_sbm_la group by tbm order by tbm 
+9 minutes ago 	
+		
+select * from tbm_sbm_la 
+10 minutes ago 	
+		
+create table tbm_sbm_la as 
+select * from hourly_central 
+union all 
+select* from hourly_north 
+union all  
+select* from hourly_south 
+17 minutes ago 	
+		
+drop table hourly_north 
+17 minutes ago 	
+		
+drop table hourly_central 
+17 minutes ago 	
+		
+drop table hourly_south 
+17 minutes ago 	
+		
+drop table tab_sbm_la 
+17 minutes ago 	
+		
+drop table tab_north 
+17 minutes ago 	
+		
+drop table tab_central 
+17 minutes ago 	
+		
+drop table tab_south 
+17 minutes ago 	
+		
+drop table tab_sbm_la1 
+18 minutes ago 	
+		
+drop table tab_central 
+18 minutes ago 	
+		
+select* from tab_sbm_la1 
+18 minutes ago 	
+		
+create table tab_sbm_la1 as 
+select * from tab_south 
+union all 
+select * from tab_north 
+union all 
+select* from tab_central 
+19 minutes ago 	
+		
+create table tab_sbm_la as 
+select * from tab_south 
+union all 
+select * from tab_north 
+union all 
+select* from tab_central 
+ 
+19 minutes ago 	
+		
+create table tab_sbm_la  
+select * from tab_south 
+union all 
+select * from tab_north 
+union all 
+select* from tab_central 
+ 
+20 minutes ago 	
+		
+load data inpath '/user/hive/warehouse/south/hourly_south.tsv' overwrite into  
+table tab_south 
+20 minutes ago 	
+		
+load data inpath '/user/hive/warehouse/north/hourly_north.csv' overwrite into  
+table tab_north 
+20 minutes ago 	
+		
+load data inpath '/user/hive/warehouse/central/hourly_central.csv' overwrite into  
+table tab_central 
+21 minutes ago 	
+		
+select* from tab_north 
+22 minutes ago 	
+		
+select* from hourly_central 
+7 hours ago 	
+		
+create table tbm_sbm_la as  
+ 
+select* from hourly_north 
+union all 
+select* from hourly_south 
+union all 
+select* from hourly_central 
+8 hours ago 	
+		
+drop table hourly_south 
+8 hours ago 	
+		
+drop table tb_sbm_la 
+8 hours ago 	
+		
+select* from hourly_central 
+8 hours ago 	
+		
+select* from hourly_north 
+8 hours ago 	
+		
+select* from hourly_central 
+8 hours ago 	
+		
+describe dig.hourly_south 
+8 hours ago 	
+		
+describe dig.hourly_north 
+8 hours ago 	
+		
+describe dig.hourly_central 
+8 hours ago 	
+		
+drop table hourly_north 
+8 hours ago 	
+		
+drop table hourly_south 
+8 hours ago 	
+		
+drop table hourly_central 
+8 hours ago 	
+		
+select* from hourly_south 
+8 hours ago 	
+		
+select* from hourly_south 
+8 hours ago 	
+		
+select* from hourly_north 
+8 hours ago 	
+		
+select* from hourly_central 
+8 hours ago 	
+		
+select* from t1 
+8 hours ago 	
+		
+create table t1 as select* from tab_central union all select* from tab_north union all select* from tab_south 
+8 hours ago 	
+		
+select* from tab_central union all select* from tab_north union all select* from tab_south 
+8 hours ago 	
+		
+select* from tab_central 
+8 hours ago 	
+		
+load data inpath '/user/hive/warehouse/central/hourly_central.csv' overwrite into  
+table tab_central 
+8 hours ago 	
+		
+select* from dig.tbm_sf_la 
+8 hours ago 	
+		
+select tbm , count(*) from dig.tbm_sf_la group by tbm order by tbm 
+8 hours ago 	
+		
+select* from dig.tbm_sf_la 
+8 hours ago 	
+		
+ALTER TABLE dig.tbm_sf_la SET 
+TBLPROPERTIES('serialization.null.format'='99999') 
+8 hours ago 	
+		
+create table dig.tbm_sf_la as  
+select * from tab_central 
+union all 
+select * from tab_north 
+union all 
+select* from tab_south 
+8 hours ago 	
+		
+drop view tbm_sf_la 
+8 hours ago 	
+		
+select* from tab_south 
+8 hours ago 	
+		
+load data inpath '/user/hive/warehouse/south/hourly_south.tsv' overwrite into  
+table tab_south 
+8 hours ago 	
+		
+select * from tab_south 
+8 hours ago 	
+		
+select * from tab_north 
+8 hours ago 	
+		
+select * from tab_central 
+8 hours ago 	
+		
+select* from hourly_central 
+8 hours ago 	
+		
+create table tab_sbm_la as  
+select* from hourly_central 
+union all 
+select* from hourly_south 
+union all 
+select * from hourly_north 
+; 
+8 hours ago 	
+		
+create table tab_sbm_la as  
+select* from hourly_central 
+union all 
+select* from hourly_south 
+union all 
+select * from hourly_north 
+; 
+8 hours ago 	
+		
+create table tab_sbm_la as  
+select* from hourly_central 
+union all 
+select* from hourly_south 
+union all 
+select * from hourly_north 
+; 
+8 hours ago 	
+		
+create table tab_sbm_la as  
+select* from hourly_central 
+union all 
+select* from hourly_south 
+union all 
+select * from hourly_north 
+; 
+8 hours ago 	
+		
+select* from dig.hourly_central 
+8 hours ago 	
+		
+select* from dig.hourly_central 
+8 hours ago 	
+		
+select* from tab_central 
+8 hours ago 	
+		
+load data inpath '/user/hive/warehouse/central/hourly_central.csv' overwrite into  
+table tab_central; 
+ 
+8 hours ago 	
+		
+load data inpath '/user/hive/warehouse/central/hourly_central.csv' overwrite into  
+table tab_central 
+8 hours ago 	
+		
+load data inpath '/user/hive/warehouse/south/hourly_south.tsv' overwrite into  
+table tab_south 
+8 hours ago 	
+		
+load data inpath '/user/hive/warehouse/north/hourly_north.csv' overwrite into  
+table tab_north 
+8 hours ago 	
+		
+select* from tab_central 
+8 hours ago 	
+		
+ 
+ 
+create or replace table dig.tbm_sf_la as  
+select * from tab_central 
+union all 
+select * from tab_north 
+union all 
+select* from tab_south 
+8 hours ago 	
+		
+ 
+ 
+create table dig.tbm_sf_la as  
+select * from tab_central 
+union all 
+select * from tab_north 
+union all 
+select* from tab_south 
+8 hours ago 	
+		
+select distinct(tbm) from dig.tbm_sf_la 
+8 hours ago 	
+		
+select tbm , count(8) from dig.tbm_sf_la group by tbm order by tbm 
+8 hours ago 	
+		
+ALTER TABLE dig.tbm_sf_la SET 
+TBLPROPERTIES('serialization.null.format'='99999') 
+8 hours ago 	
+		
+create table dig.tbm_sf_la as  
+select * from tab_central 
+union all 
+select * from tab_north 
+union all 
+select* from tab_south 
+8 hours ago 	
+		
+ 
+ 
+create or replace table dig.tbm_sf_la as  
+select * from tab_central 
+union all 
+select * from tab_north 
+union all 
+select* from tab_south 
+8 hours ago 	
+		
+create or replace table dig.tbm_sf_la as  
+select * from tab_central 
+union all 
+select * from tab_north 
+union all 
+select* from tab_south 
+8 hours ago 	
+		
+create table dig.tbm_sf_la as  
+select * from tab_central 
+union all 
+select * from tab_north 
+union all 
+select* from tab_south 
+8 hours ago 	
+		
+load data inpath '/user/hive/warehouse/south/hourly_south.tsv' overwrite into  
+table tab_south; 
+ 
+8 hours ago 	
+		
+load data inpath '/user/hive/warehouse/north/hourly_north.csv' overwrite into  
+table tab_north; 
+ 
+8 hours ago 	
+		
+load data inpath '/user/hive/warehouse/north/hourly_north.csv' overwrite into  
+table tab_north 
+8 hours ago 	
+		
+load data inpath '/user/hive/warehouse/south/hourly_south.tsv' overwrite into  
+table tab_south 
+8 hours ago 	
+		
+load data inpath '/user/hive/warehouse/central/hourly_central.csv' overwrite into  
+table tab_central 
+9 hours ago 	
+		
+select distinct (tbm)from tb_sbm_la 
+9 hours ago 	
+		
+select distinct (*)from tb_sbm_la; 
+9 hours ago 	
+		
+select* from tb_sbm_la where tbm ='Shai-Hulud' 
+9 hours ago 	
+		
+select* from tb_sbm_la 
+9 hours ago 	
+		
+insert into table tb_sbm_la select* from tab_north union all select * from tab_central union all select * from tab_south 
+9 hours ago 	
+		
+insert into table tb_sbm_la ( select* from tab_north union all select * from tab_central union all select * from tab_south) 
+9 hours ago 	
+		
+select* from tb_sbm_la 
+9 hours ago 	
+		
+select* from tab_central 
+9 hours ago 	
+		
+load data inpath '/user/hive/warehouse/central/hourly_central.csv' overwrite into  
+table tab_central 
+9 hours ago 	
+		
+load data inpath '/user/hive/warehouse/south/hourly_south.tsv' overwrite into  
+table tab_south 
+9 hours ago 	
+		
+load data inpath '/user/hive/warehouse/north/hourly_north.csv' overwrite into  
+table tab_north 
+9 hours ago 	
+		
+select* from tab_central 
+9 hours ago 	
+		
+select* from tb_sbm_la 
+9 hours ago 	
+		
+create table tb_sbm_la ( 
+tbm string, 
+year int, 
+month int, 
+day int, 
+hour float, 
+lon float, 
+lat float 
+) 
+9 hours ago 	
+		
+select* from tab_central 
+9 hours ago 	
+		
+load data inpath '/user/hive/warehouse/central/hourly_central.csv' overwrite into  
+table tab_central 
+9 hours ago 	
+		
+select* from tab_central 
+9 hours ago 	
+		
+select* from tab_south 
+9 hours ago 	
+		
+load data inpath '/user/hive/warehouse/south/hourly_south.tsv' overwrite into  
+table tab_south 
+9 hours ago 	
+		
+select* from tab_south 
+9 hours ago 	
+		
+select* from tab_north 
+9 hours ago 	
+		
+load data inpath '/user/hive/warehouse/north/hourly_north.csv' overwrite into  
+table tab_north 
+9 hours ago 	
+		
+select * from tab_north 
+9 hours ago 	
+		
+select * from tab_north 
+9 hours ago 	
+		
+select * from tab_south 
+9 hours ago 	
+		
+select * from tab_central 
+9 hours ago 	
+		
+drop table tab_sbm_sf 
+9 hours ago 	
+		
+create or replace table tab_sbm_sf as 
+select tab_south.tbm,tab_south.year, tab_south.month, tab_south.day, tab_south.hour, tab_south.lon, tab_south.lat from tab_south  
+union all 
+select tab_north.tbm,tab_north.year, tab_north.month, tab_north.day, tab_north.hour, tab_north.lon, tab_north.lat from tab_north 
+union all 
+select tab_central.tbm,tab_central.year, tab_central.month, tab_central.day, tab_central.hour, tab_central.lon, tab_central.lat from tab_central 
+ 
+ 
+ 
+9 hours ago 	
+		
+create or replace table tab_sbm_sf as 
+select tab_north.tbm,tab_north.year, tab_north.month, tab_north.day, tab_north.hour, tab_north.lon, tab_north.lat from tab_north 
+union all 
+select tab_central.tbm,tab_central.year, tab_central.month, tab_central.day, tab_central.hour, tab_central.lon, tab_central.lat from tab_central; 
+ 
+ 
+ 
+9 hours ago 	
+		
+create or replace table tab_sbm_sf as 
+select tab_north.tbm,tab_north.year, tab_north.month, tab_north.day, tab_north.hour, tab_north.lon, tab_north.lat from tab_north 
+union all 
+select tab_central.tbm,tab_central.year, tab_central.month, tab_central.day, tab_central.hour, tab_central.lon, tab_central.lat from tab_central 
+ 
+ 
+ 
+9 hours ago 	
+		
+select* from tab_sbm_sf 
+9 hours ago 	
+		
+create table tab_sbm_sf as 
+select tab_south.tbm,tab_south.year, tab_south.month, tab_south.day, tab_south.hour, tab_south.lon, tab_south.lat from tab_south  
+union all 
+select tab_north.tbm,tab_north.year, tab_north.month, tab_north.day, tab_north.hour, tab_north.lon, tab_north.lat from tab_north 
+union all 
+select tab_central.tbm,tab_central.year, tab_central.month, tab_central.day, tab_central.hour, tab_central.lon, tab_central.lat from tab_central 
+9 hours ago 	
+		
+select* from tab_south 
+9 hours ago 	
+		
+load data inpath '/user/hive/warehouse/south/hourly_south.tsv' overwrite into  
+table tab_south 
+9 hours ago 	
+		
+select * from tab_south 
+9 hours ago 	
+		
+select * from tab_central 
+9 hours ago 	
+		
+select * from tab_north 
+9 hours ago 	
+		
+select * from tab_south 
+9 hours ago 	
+		
+select * from tab_central union all select* from tab_north union all select * from tab_south 
+9 hours ago 	
+		
+select * from tab_central union select* from tab_north union select * from tab_south 
+9 hours ago 	
+		
+create or replace view tbm_sf_la as 
+ 
+select * from tab_north  
+union all 
+select * from tab_south 
+union all 
+select * from tab_central 
+9 hours ago 	
+		
+create or replace view tbm_sf_la as 
+select * from ( 
+select * from tab_north  
+union all 
+select * from tab_south 
+union all 
+select * from tab_central 
+) 
+; 
+9 hours ago 	
+		
+create or replace view tbm_sf_la as  
+select * from tab_north  
+union  
+select * from tab_south 
+union  
+select * from tab_central 
+; 
+9 hours ago 	
+		
+create or replace view tbm_sf_la as  
+ 
+select * from tab_north  
+union  
+select * from tab_south 
+union  
+select * from tab_central 
+; 
+9 hours ago 	
+		
+create or replace view tbm_sf_la as  
+ 
+(select * from tab_north)  
+union  
+(select * from tab_south) 
+union  
+(select * from tab_central) 
+; 
+9 hours ago 	
+		
+select count(*),tbm from tbm_sf_la group by tbm 
+9 hours ago 	
+		
+select * from tbm_sf_la 
+9 hours ago 	
+		
+select distinct(tbm_sf_la.tbm)from tbm_sf_la 
+9 hours ago 	
+		
+select distinct(tbm)from tbm_sf_la 
+9 hours ago 	
+		
+select * from tbm_sf_la 
+9 hours ago 	
+		
+create or replace view tbm_sf_la as  
+ 
+select * from tab_north  
+union all 
+select * from tab_south 
+union all 
+select * from tab_central 
+9 hours ago 	
+		
+create or replace view tbm_sf_la as ( 
+select * from tab_north  
+union all 
+select * from tab_south 
+union all 
+select * from tab_central 
+); 
+9 hours ago 	
+		
+drop table tbm_sf_la 
+9 hours ago 	
+		
+select * from tab_north 
+9 hours ago 	
+		
+load data inpath '/user/hive/warehouse/north/hourly_north.csv' overwrite into  
+table tab_north 
+9 hours ago 	
+		
+load data inpath '/user/hive/warehouse/north/hourly_north.csvt' overwrite into  
+table tab_north; 
+ 
+9 hours ago 	
+		
+load data inpath '/user/hive/warehouse/south/hourly_south.tsv' overwrite into  
+table tab_south 
+9 hours ago 	
+		
+select* from tab_central 
+9 hours ago 	
+		
+load data inpath '/user/hive/warehouse/central/hourly_central.csv' overwrite into  
+table tab_central 
+9 hours ago 	
+		
+select * from tab_central 
+9 hours ago 	
+		
+select count(*) from tab_central 
+9 hours ago 	
+		
+select * from tab_north 
+9 hours ago 	
+		
+select * from tab_central 
+9 hours ago 	
+		
+select count(tab_central.tbm) from tab_central 
+9 hours ago 	
+		
+select count(*) from tbm_sf_la where tbm='Shai-hulud' 
+10 hours ago 	
+		
+select distinct(tbm) from tbm_sf_la 
+10 hours ago 	
+		
+select tbm, count(*) as num_rows from tbm_sf_la group by tbm order by tbm 
+10 hours ago 	
+		
+select * from tbm_sf_la 
+10 hours ago 	
+		
+ALTER table tbm_sf_la 
+SET TBLPROPERTIES ('skip.header.line.count'='3') 
+10 hours ago 	
+		
+select * from tbm_sf_la 
+10 hours ago 	
+		
+create table tbm_sf_la as 
+select * from tab_north  
+union all 
+select* from tab_central  
+union all 
+select * from tab_south 
+10 hours ago 	
+		
+create table if not exists tbm_sf_la  
+select * from tab_north  
+union all  
+select * from tab_south  
+union all 
+select* from tab_central 
+; 
+10 hours ago 	
+		
+create table if not exists tbm_sf_la  
+( 
+select * from tab_north  
+union all  
+select * from tab_south  
+union all 
+select* from tab_central 
+); 
